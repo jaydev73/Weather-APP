@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-@media print {
-body {-webkit-print-color-adjust: exact;}
-}
+
 *{
     margin: 0;
     padding: 0;

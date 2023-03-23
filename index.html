@@ -15,11 +15,11 @@
     </nav>
     <div class="card-container">
       <div class="card">
-          <div class="card-title">Monday</div>
-          <div class="hi-temp">75 F</div>
-          <div class="card-image"></div>
-          <div class="card-text">
-            Still Cool
+          <div class="card-title">WEDNESDAY</div>
+          <div id="temp"></div>
+          <div class="card-image"><img src="https://openweathermap.org/img/wn/10d@2x.png"/></div>
+          <div class="description">
+            <p id="weather-description"></p>
           </div>
       </div>
       <div class="card">
@@ -38,7 +38,7 @@
     </div>
       <div class="card">
           <div class="card-title">Cooking</div>
-          <div class="card-image"></div>
+          <div class="card-image"><img src="https://openweathermap.org/img/wn/10d@2x.png"/></div>
           <div class="card-text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id repudiandae dolore veritatis nisi eos delectus
           </div>
@@ -65,7 +65,21 @@
         </div>
       </div>
     </div>
+    <footer class="header">
+      <div class="city">Los Angeles, US
+        <p>Sunset :          Sunrise :</p>
+      </div>
+      <div class="date" id="date">
+        <p>Sunset :          Sunrise :</p>
+      </div>
+      
+        
+      
+    </footer>
   </main>
+  <div id="openweathermap-widget-15"></div>
+  <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 15,cityid: '5368361',appid: 'e4076d0ec4c1dcd51d27efd97fa788aa',units: 'imperial',containerid: 'openweathermap-widget-15',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
     <script type="module" src="./index.js"></script>
+
 </body>
 </html>

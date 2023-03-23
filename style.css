@@ -24,11 +24,14 @@ body{
   border: 0;
 
 }
-
+footer.header{
+  margin-top: 5px;
+  padding-top: 5px;
+}
 .card-container{
     display: flex;
     flex-direction: row;
-
+    align-items: center;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -39,8 +42,9 @@ body{
     width: 180px;
     height: 500px;
     position: relative;
-    background: linear-gradient(180deg,rgb(7, 81, 124),#0a8ac5) fixed;
+    background: linear-gradient(180deg,rgb(39, 43, 45),#333536) fixed;
     display: flex;
+    opacity: 0.9;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -50,32 +54,44 @@ body{
     margin: 0;
     transition: all .3s ease-in;
 }
-
+p {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
 .card-image{
     height: 150px;
     width: 150px;
-    border: 5px double #022a3c;
-    border-radius: 50%;
+    align-items: center;
     background-position: center center;
-    background-size: cover;    
+      
+}
+#temp {
+  font-size:60px;
+  font-weight: 400;
+  font-family: 'TimesRoman', sans-serif;
+}
+img{
+  
+  height: 250px;
+  width: 250px;
+  margin-left: -50px;
+  margin-top: -50px;
+  
 }
 .card-title{
-    padding: 10px 5px;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    justify-items: center;
     font-size: 1.5rem;
+    color: black;
     text-transform: uppercase;
     text-shadow: 1px 0px 2px #262654;
     background-color: white;
-    margin-bottom: 30;
+    
 }
-.card:nth-child(1) .card-image{
-    background-image: url(coding.jpg);
-}
-.card:nth-child(2) .card-image{
-    background-image: url(cooking.jpg);
-}
-.card:nth-child(3) .card-image{
-    background-image: url(cycling.jpg);
-}
+
 .card:hover{
     background: #e84393;
     color: #fff;

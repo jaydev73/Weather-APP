@@ -1,5 +1,4 @@
 
-
 const API_KEY = ""
 fetch(`https://api.openweathermap.org/data/2.5/weather?zip=90029,US&units=imperial&appid=${API_KEY}`).then(response => response.json()).then(data => {
     console.log(data.weather[0].icon)
